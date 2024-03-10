@@ -5,6 +5,10 @@ import './App.css';
 
 import Home from './routes/home/home';
 import Navigation from './routes/navigation/navigation';
+import BookDetailsPage from './components/book-detail/book-detail';
+
+import books from './components/directory/books';
+
 
 function App() {
   return (
@@ -14,6 +18,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Navigation />} />
           <Route index element={<Home/>} />
+          <Route path="/book/:index" element={<BookDetailsPage books={books}/>} />
         </Routes>
       </Fragment>
     </div>

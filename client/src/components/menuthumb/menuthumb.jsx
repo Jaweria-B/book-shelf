@@ -1,7 +1,12 @@
+import { useNavigate } from 'react-router-dom';
 
-const MenuThumb = ({ imageUrl, title, author, price, store }) => {
+const MenuThumb = ({ index, imageUrl, title, author, price, store }) => {
+  const navigate = useNavigate();
+
+  const onNavigateHandler = () => navigate(`/book/${index}`);
+
   return (
-    <div>
+    <div onClick={onNavigateHandler}>
       <div className="menu-image-wrap">
         <img src={imageUrl} className="img-fluid menu-image" alt={title} style={{ width: '100%', maxWidth: '300px' }}/>
       </div>

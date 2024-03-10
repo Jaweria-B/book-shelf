@@ -6,6 +6,7 @@ const MenuThumbsList = ({ books }) => {
         {books.map((book, index) => (
         <div key={index} className="col-lg-4 col-md-6 col-12 mb-4">
             <MenuThumb
+            index={book.index}
             imageUrl={book.src}
             title={book.title}
             author={book.author}
