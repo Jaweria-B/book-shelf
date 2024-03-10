@@ -25,21 +25,22 @@ const Navigation = () => {
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Don't know</a>
-                        </li>
-
-                        <li class="nav-item">
                             <a class="nav-link" href="#">Our Updates</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SignUp</a>
+                        </li>
+
                     </ul>
                 </div>
 
                 <div class="d-none d-lg-block">
-                    <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservation</button>
+                    <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Sell Books!</button>
                 </div>
 
             </div>
