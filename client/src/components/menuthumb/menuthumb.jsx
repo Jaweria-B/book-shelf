@@ -8,7 +8,7 @@ const MenuThumb = ({ index, imageUrl, title, author, price, store }) => {
   return (
     <div onClick={onNavigateHandler}>
       <div className="menu-image-wrap">
-        <img src={imageUrl} className="img-fluid menu-image" alt={title} style={{ width: '100%', maxWidth: '300px' }}/>
+        <img src={imageUrl} className="img-fluid menu-image" alt={title} style={{ width: '100%', height: '100%', maxWidth: '300px', maxHeight: '500px', minHeight: '400px' }}/>
       </div>
 
       <div className="menu-info">
