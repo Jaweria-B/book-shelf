@@ -1,9 +1,9 @@
-
+import Showcase from "../../components/showcase/showcase";
 
 const Home = () => {
     return (
         <div>
-            This is Home Page----
+            <Showcase />
         </div>
     );
 }
