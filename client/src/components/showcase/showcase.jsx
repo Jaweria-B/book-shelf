@@ -1,4 +1,6 @@
+import Carousel from "../carousel/carousel";
 
+import carouselItems from './carouselItems'; // Assuming carouselItems.js is in the same directory
 
 const Showcase = () => {
     return (
@@ -19,112 +21,7 @@ const Showcase = () => {
                         </div>
 
                         <div class="col-lg-7 col-12">
-                            <div id="carouselExampleCaptions" class="carousel carousel-fade hero-carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="carousel-image-wrap">
-                                            <img src={require("../../assets/images/slide/books-1204029_1280.jpg")} class="img-fluid carousel-image" alt=""/>
-                                        </div>
-                                        
-                                        <div class="carousel-caption">
-                                            {/* <span class="text-white">
-                                                <i class="bi-geo-alt me-2"></i>
-                                                Manhattan, New York
-                                            </span> */}
-
-                                            <h4 class="hero-text">"Open a book, unlock a universe."</h4>
-                                        </div>
-                                    </div>
-
-                                    <div class="carousel-item">
-                                        <div class="carousel-image-wrap">
-                                            <img src={require("../../assets/images/slide/tea-time-3240766_1280.jpg")} class="img-fluid carousel-image" alt=""/>
-                                        </div>
-                                        
-                                        <div class="carousel-caption">
-                                            <div class="d-flex align-items-center">
-                                                <h4 class="hero-text">"Words weave wonders."</h4>
-
-                                                {/* <span class="price-tag ms-4"><small>$</small>26.50</span> */}
-                                            </div>
-
-                                            {/* <div class="d-flex flex-wrap align-items-center">
-                                            
-
-                                                <div class="reviews-stars">
-                                                    <i class="bi-star-fill reviews-icon"></i>
-                                                    <i class="bi-star-fill reviews-icon"></i>
-                                                    <i class="bi-star-fill reviews-icon"></i>
-                                                    <i class="bi-star reviews-icon"></i>
-                                                    <i class="bi-star reviews-icon"></i>
-                                                </div>
-                                            </div> */}
-                                        </div>
-                                    </div>
-
-                                    <div class="carousel-item">
-                                        <div class="carousel-image-wrap">
-                                            <img src={require("../../assets/images/slide/woman-6318447_1280.jpg")} class="img-fluid carousel-image" alt=""/>
-                                        </div>
-                                        
-                                        <div class="carousel-caption">
-                                            <div class="d-flex align-items-center">
-                                                <h4 class="hero-text">"Explore. Dream. Discover. In every page."</h4>
-
-                                                {/* <span class="price-tag ms-4"><small>$</small>18.25</span> */}
-                                            </div>
-
-                                            {/* <div class="d-flex flex-wrap align-items-center">
-                                                <h5 class="reviews-text mb-0 me-3">4.2/5</h5>
-
-                                                <div class="reviews-stars">
-                                                    <i class="bi-star-fill reviews-icon"></i>
-                                                    <i class="bi-star-fill reviews-icon"></i>
-                                                    <i class="bi-star-fill reviews-icon"></i>
-                                                    <i class="bi-star-fill reviews-icon"></i>
-                                                    <i class="bi-star reviews-icon"></i>
-                                                </div>
-                                            </div> */}
-                                        </div>
-                                    </div>
-
-                                    <div class="carousel-item">
-                                        <div class="carousel-image-wrap">
-                                            <img src={require("../../assets/images/slide/books-1617327_1280.jpg")} class="img-fluid carousel-image" alt=""/>
-                                        </div>
-                                        
-                                        <div class="carousel-caption">
-                                            <div class="d-flex align-items-center">
-                                                <h4 class="hero-text">"Dive into books, emerge inspired."</h4>
-
-                                                {/* <span class="price-tag ms-4"><small>$</small>18.25</span> */}
-                                            </div>
-
-                                            {/* <div class="d-flex flex-wrap align-items-center">
-                                                <h5 class="reviews-text mb-0 me-3">4.2/5</h5>
-
-                                                <div class="reviews-stars">
-                                                    <i class="bi-star-fill reviews-icon"></i>
-                                                    <i class="bi-star-fill reviews-icon"></i>
-                                                    <i class="bi-star-fill reviews-icon"></i>
-                                                    <i class="bi-star-fill reviews-icon"></i>
-                                                    <i class="bi-star reviews-icon"></i>
-                                                </div>
-                                            </div> */}
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
+                            <Carousel carouselItems={carouselItems} />
                         </div>
 
                     </div>
